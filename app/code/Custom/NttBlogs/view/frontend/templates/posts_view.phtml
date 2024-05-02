@@ -1,0 +1,16 @@
+<?php
+$post = $block->getData('post_data');
+//dd($post);
+?>
+<div class="post-detail">
+    <h1><?php echo $post->getNombre(); ?></h1>
+    <div class="post-description">
+        <?php echo $post->getContenido(); ?>
+    </div>
+    <div class="post-description">
+        <?php echo $post->getImagen(); ?>
+    </div>
+    <div class="post-description">
+        <?php echo $post->getCreatedAt(); ?>
+    </div>
+</div>

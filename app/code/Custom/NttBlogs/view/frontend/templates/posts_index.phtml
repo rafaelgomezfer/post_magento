@@ -1,0 +1,13 @@
+<?php
+$posts = $block->getPosts();
+//dd($posts);
+?>
+<div class="post-list">
+    <ul>
+        <?php foreach ($posts as $post): ?>
+            <li>
+                <a href="<?php echo $block->getUrl('nttblogs/posts/view', ['post_id' => $post->getId()]); ?>"><?php echo $post->getNombre(); ?></a>
+            </li>
+        <?php endforeach; ?>
+    </ul>
+</div>

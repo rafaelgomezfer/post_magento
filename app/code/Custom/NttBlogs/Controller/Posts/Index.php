@@ -17,7 +17,6 @@ class Index extends Action
 
 	public function execute()
 	{
-		echo "Ntt Blogs";
-		exit;
+		return $this->_pageFactory->create();
 	}
 }
