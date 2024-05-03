@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="Custom_NttBlogs::menu" 
+            title="Ntt Blogs" 
+            module="Custom_NttBlogs"
+            sortOrder="10" 
+            resource="Custom_NttBlogs::menu" />
+        <add id="Custom_NttBlogs::posts" 
+            title="Posts" 
+            module="Custom_NttBlogs" 
+            parent="Custom_NttBlogs::menu" 
+            sortOrder="1" action="nttblogs/posts/index" 
+            resource="Custom_NttBlogs::posts"/>
+    </menu>
+</config>
